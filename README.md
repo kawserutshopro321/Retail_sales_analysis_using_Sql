@@ -91,6 +91,8 @@ WHERE
     AND
     quantity >= 4
 ```
+<img width="1455" height="323" alt="image" src="https://github.com/user-attachments/assets/5ea01fb7-fc0e-48aa-a75e-5879c0e39c43" />
+
 
 3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
 ```sql
@@ -101,6 +103,9 @@ SELECT
 FROM retail_sales
 GROUP BY 1
 ```
+<img width="511" height="157" alt="image" src="https://github.com/user-attachments/assets/e6774569-596e-4892-b71c-936a6ebfdc4f" />
+
+
 
 4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.**:
 ```sql
@@ -109,12 +114,15 @@ SELECT
 FROM retail_sales
 WHERE category = 'Beauty'
 ```
+<img width="350" height="93" alt="image" src="https://github.com/user-attachments/assets/5a2dd55c-ce89-4ce6-932d-4a4a883959a0" />
+
 
 5. **Write a SQL query to find all transactions where the total_sale is greater than 1000.**:
 ```sql
 SELECT * FROM retail_sales
 WHERE total_sale > 1000
 ```
+<img width="1475" height="293" alt="image" src="https://github.com/user-attachments/assets/17e21561-9fb3-41a2-84cd-dba136743fd9" />
 
 6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.**:
 ```sql
@@ -129,6 +137,8 @@ GROUP
     gender
 ORDER BY 1
 ```
+<img width="535" height="239" alt="image" src="https://github.com/user-attachments/assets/c0c8a417-c183-4537-9235-c81926187814" />
+
 
 7. **Write a SQL query to calculate the average sale for each month. Find out best selling month in each year**:
 ```sql
@@ -148,6 +158,8 @@ GROUP BY 1, 2
 ) as t1
 WHERE rank = 1
 ```
+<img width="413" height="121" alt="image" src="https://github.com/user-attachments/assets/c2174db8-8bcf-42b2-8015-a7b9413efb4e" />
+
 
 8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
 ```sql
@@ -159,6 +171,8 @@ GROUP BY 1
 ORDER BY 2 DESC
 LIMIT 5
 ```
+<img width="335" height="214" alt="image" src="https://github.com/user-attachments/assets/65d82700-437f-4d8f-ba1f-66b7b9fa5215" />
+
 
 9. **Write a SQL query to find the number of unique customers who purchased items from each category.**:
 ```sql
@@ -168,6 +182,8 @@ SELECT
 FROM retail_sales
 GROUP BY category
 ```
+<img width="399" height="159" alt="image" src="https://github.com/user-attachments/assets/1a7e48e3-523d-4997-84b1-8e6922bea526" />
+
 
 10. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**:
 ```sql
@@ -188,6 +204,8 @@ SELECT
 FROM hourly_sale
 GROUP BY shift
 ```
+<img width="425" height="159" alt="image" src="https://github.com/user-attachments/assets/4e78971f-8a9d-44ee-8421-d939fe5286d7" />
+
 
 ## Findings
 
@@ -205,25 +223,3 @@ GROUP BY shift
 ## Conclusion
 
 This project serves as a comprehensive introduction to SQL for data analysts, covering database setup, data cleaning, exploratory data analysis, and business-driven SQL queries. The findings from this project can help drive business decisions by understanding sales patterns, customer behavior, and product performance.
-
-## How to Use
-
-1. **Clone the Repository**: Clone this project repository from GitHub.
-2. **Set Up the Database**: Run the SQL scripts provided in the `database_setup.sql` file to create and populate the database.
-3. **Run the Queries**: Use the SQL queries provided in the `analysis_queries.sql` file to perform your analysis.
-4. **Explore and Modify**: Feel free to modify the queries to explore different aspects of the dataset or answer additional business questions.
-
-## Author - Zero Analyst
-
-This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
-
-### Stay Updated and Join the Community
-
-For more content on SQL, data analysis, and other data-related topics, make sure to follow me on social media and join our community:
-
-- **YouTube**: [Subscribe to my channel for tutorials and insights](https://www.youtube.com/@zero_analyst)
-- **Instagram**: [Follow me for daily tips and updates](https://www.instagram.com/zero_analyst/)
-- **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/najirr)
-- **Discord**: [Join our community to learn and grow together](https://discord.gg/36h5f2Z5PK)
-
-Thank you for your support, and I look forward to connecting with you!

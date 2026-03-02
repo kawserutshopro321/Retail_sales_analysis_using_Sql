@@ -2,9 +2,8 @@
 
 ## Project Overview
 
-**Project Title**: Retail Sales Analysis  
-**Level**: Beginner  
-**Database**: `p1_retail_db`
+**Project Title**: Retail Sales Analysis 
+**TOOL: POSTGRES, pgAdmin4
 
 This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze retail sales data. The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries. This project is ideal for those who are starting their journey in data analysis and want to build a solid foundation in SQL.
 
@@ -19,7 +18,7 @@ This project is designed to demonstrate SQL skills and techniques typically used
 
 ### 1. Database Setup
 
-- **Database Creation**: The project starts by creating a database named `p1_retail_db`.
+- **Database Creation**: The project starts by creating a database named `retail_sales`.
 - **Table Creation**: A table named `retail_sales` is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
 ```sql
@@ -40,6 +39,7 @@ CREATE TABLE retail_sales
     total_sale FLOAT
 );
 ```
+
 
 ### 2. Data Exploration & Cleaning
 
@@ -76,6 +76,8 @@ SELECT *
 FROM retail_sales
 WHERE sale_date = '2022-11-05';
 ```
+<img width="1475" height="289" alt="image" src="https://github.com/user-attachments/assets/8eea2bd3-7fef-4cb5-952b-285be5c09c6f" />
+
 
 2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
 ```sql
